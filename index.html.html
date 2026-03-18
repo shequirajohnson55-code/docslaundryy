@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Doc's Laundry</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Segoe UI', sans-serif;
+        background: #f5f7fb;
+        color: #333;
+    }
+
+    /* HEADER / BANNER */
+    header {
+        background: linear-gradient(135deg, #2d3e9f, #1f2c73);
+        padding: 30px 20px;
+        text-align: center;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .logo {
+    max-width: 360px;
+    height: auto;
+    background: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+    /* NAV */
+    nav {
+        background: #1f2c73;
+        padding: 12px;
+        text-align: center;
+        position: sticky;
+        top: 0;
+    }
+
+    nav a {
+        color: white;
+        margin: 0 18px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: 0.3s;
+    }
+
+    nav a:hover {
+        color: #9bb3ff;
+        transform: scale(1.1);
+    }
+
+    /* SECTIONS */
+    section {
+        padding: 60px 20px;
+        max-width: 1100px;
+        margin: auto;
+    }
+
+    h2 {
+        color: #2d3e9f;
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 2em;
+    }
+
+    /* CARDS */
+    .card {
+        background: white;
+        padding: 25px;
+        margin: 20px 0;
+        border-radius: 12px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        transition: 0.3s;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    /* SERVICES LIST */
+    ul {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    ul li {
+        padding: 10px 0;
+        border-bottom: 1px solid #eee;
+    }
+
+    /* LOCATIONS GRID */
+    .locations {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+    /* CONTACT */
+    .contact p {
+        margin: 10px 0;
+        font-size: 1.1em;
+    }
+
+    /* MAP */
+    iframe {
+        width: 100%;
+        height: 350px;
+        border: none;
+        border-radius: 12px;
+        margin-top: 20px;
+    }
+
+    /* FOOTER */
+    footer {
+        background: #1f2c73;
+        color: white;
+        text-align: center;
+        padding: 25px;
+        margin-top: 40px;
+    }
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <img src="IMG_0883.jpeg" alt="Doc's Laundry Logo" class="logo">
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#locations">Locations</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    <h2>About Us</h2>
+    <div class="card">
+        <p>
+            Doc’s Laundry is a trusted laundromat in Baton Rouge providingg clean, modern, and efficient
+            laundry services. With multiple convenient locations, customers enjoy a safe, fast, and
+            affordable experience whether using self-service machines or wash & fold options.
+        </p>
+    </div>
+</section>
+
+<section id="services">
+    <h2>Our Services</h2>
+    <div class="card">
+        <ul>
+            <li>Self-Service Laundry</li>
+            <li>Wash & Fold Service</li>
+            <li>Commercial Laundry</li>
+            <li>Steam and Press Services</li>
+            <li>Tailoring Services</li>
+        </ul>
+    </div>
+</section>
+
+<section id="locations">
+    <h2>Our Locations</h2>
+    <div class="locations">
+
+        <div class="card">
+            <h3>Government Street</h3>
+            <p>3484 Government St, Baton Rouge, LA</p>
+        </div>
+
+        <div class="card">
+            <h3>Florida Blvd</h3>
+            <p>12345 Florida Blvd, Baton Rouge, LA</p>
+        </div>
+
+        <div class="card">
+            <h3>Plank Road</h3>
+            <p>6789 Plank Rd, Baton Rouge, LA</p>
+        </div>
+
+        <div class="card">
+            <h3>Airline Highway</h3>
+            <p>5678 Airline Hwy, Baton Rouge, LA</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <div class="card contact">
+        <p><strong>Phone:</strong> (225) 000-0000</p>
+        <p><strong>Email:</strong> info@docslaundry.com</p>
+        <p><strong>Hours:</strong> Open Daily 6:00 AM – 10:00 PM</p>
+    </div>
+</section>
+
+<section>
+    <h2>Find Us</h2>
+    <iframe src="https://www.google.com/maps?q=3484+Government+St,+Baton+Rouge,+LA&output=embed"></iframe>
+</section>
+
+<footer>
+    <p>© 2026 Doc's Laundry | Baton Rouge, LA</p>
+</footer>
+
+</body>
+</html>
